@@ -1,0 +1,227 @@
+*{
+	box-sizing: border-box;
+}
+body {
+	background-color: #FCEBB6;
+	color: #221811;
+	font-family: "Verdana", "Arial", "Sans-serif";
+	background-image:url(background.gif);
+}
+table{
+	margin-right: auto;
+	margin-left: auto;
+	width:90%;
+	border-spacing: 0;
+	background-color:#FCEBB6;
+}
+td, th {padding:10px;}
+
+tr:nth-of-type(odd){
+	background-color: #D2B48E;
+}
+header{
+	background-color: #D2B48C;
+	height: 150px;
+	background-image: url(QPOCFlag.jpg);
+	background-repeat: no-repeat;
+	display: block;
+}
+h1{
+	margin:0;
+	text-align: center;
+	padding-top:45px;
+	padding-left: 220px;
+	font-size: 3em;
+}
+nav{
+	text-align: left;
+	font-weight: bold;
+	font-size: 1.5em;
+	padding-top: 10px;
+	padding-left: 10px;
+	float: left;
+	width: 200px;
+	display:block;
+
+}
+nav a{
+	text-decoration: none;
+}
+nav a:link {color: #FEF6C2;}
+nav a:visited {color: #D2B48C;}
+nav a:hover {color: #CC9933};
+nav ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+footer{
+	background-color: #D2B48C;
+	font-size: .60em;
+	font-style: italic;
+	text-align: center;
+	padding-bottom: 10px;
+	border-top: 2px solid #221811;
+	display:block;
+}
+#wrapper{
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #231814;
+	min-width: 900px;
+	max-width: 1280px;
+	box-shadow: 4px 4px;
+}
+h4{
+	background-color: #D2B48C;
+	font-size: 3em;
+	padding-left: : 3em;
+	padding-right: 2em;
+	padding-bottom: 0;
+	text-transform: uppercase;
+	border-bottom: 1px solid #000033;
+	clear:left;
+}
+
+main{
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-top: 0;
+	margin-left: 200px;
+	display: block;
+	background-color: #FEF6C2;
+	display:block;
+}
+main h4{
+	padding-left: 3em;
+	padding-right:2em;
+}
+main h2 {
+	padding-left: 3em;
+	padding-right: 2em;
+}
+main h3 {
+	padding-left: 3em;
+	padding-right: 2em;
+}
+main p {
+	padding-left: 3em;
+	padding-right: 2em;
+}
+main div {
+	padding-left: 3em;
+	padding-right: 2em;
+}
+main ul{
+	padding-left: 3em;
+	padding-right: 2em;
+}
+main dl{
+	padding-left: 3em;
+	padding-right: 2em;
+}
+main dd{
+	padding-left: 3em;
+	padding-right: 2em;
+}
+main dt{
+	padding-left: 3em;
+	padding-right: 2em;
+}
+img{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#heroroad{
+	background-size: 100% 100%;
+	height:250px;
+	background-image:url(heroroad.jpg);
+	background-repeat: none;
+}
+#heromugs{
+	background-size: 100% 100%;
+	height:250px;
+	background-image:url(heromugs.jpg);
+}
+#heroguitar{
+	background-size: 100% 100%;
+	height:250px;
+	background-image:url(heroguitar.jpg);
+}
+
+.floatleft {
+	float:left;
+	padding-right: 2em;
+	padding-bottom: 2em;
+}
+#details{
+	padding-left: 20%;
+	padding-right: 20%;
+	overflow:auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.button {
+  {background-color: #e7e7e7; color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-style: "Arial Black";
+}
+
+#mobile { display: none; } 
+#desktop { display: inline; }
+
+@media only screen and (max-width: 1024px) {
+	body{background-image: none;}
+	#wrapper{
+		width: auto;
+		min-width:0;
+		padding:0;
+		box-shadow:none;
+	}
+	header{background-image: url(javajamlogo.jpg);
+		border: 5px solid color:#FEF6C2};
+	h1{margin-top: 0;
+		margin-bottom: 1em;
+		font-size:2.5em;
+		}
+	nav{float:none;
+		width:auto;
+		padding-top: 0;
+		margin: : 10px;
+		font-size:1.3em;}
+	nav li {display: inline-block;}
+	nav a {padding:1em;
+		width:8em;
+		font-weight:bold;
+		border-style:none;}
+	nav ul{padding: 0; margin: 0;}
+	#heroroad{
+	background-repeat: none;
+	margin:0; padding:0;}
+	#heromugs{margin:0; padding:0;}
+	#heroguitar{margin:0; padding:0;}
+	main{margin:0; font-size:90%;}
+}
+
+@media only screen and (max-width: 768px) {
+header{background-image: url(javajammini.jpg);
+	height:128px;}
+h1{font-size:2em; text-align:center;}
+nav a {display:block; padding: 0.2em; width:auto; border-bottom: 1px #FEF6C2}
+nav li {display: block;}
+main{padding-top: block;}
+h2{padding-top: 0.5em; padding-right: 0; padding-bottom: 0; padding-left: 0.5em; margin-right: 0.5em;}
+details{padding-left: 0; padding-right: 0;}
+#heroroad{background-image:none; height:auto;}
+#heromugs{background-image:none; height:auto;}
+#heroguitar{background-image:none; height:auto;}

@@ -1,0 +1,86 @@
+.background-image{
+  background-image: url(MuseumExhibit.jpg);
+  background-repeat: no-repeat;
+}
+body{
+  background-color: #BC8F8F;
+}
+
+header{
+  background-color: #D2B48C;
+  height: 150px;
+  background-image: url(QPOCFlag.jpg);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+h1{
+  margin:0;
+  text-align: center;
+  padding-top:40px;
+  padding-left:200px;
+  font-size: 3.75em;
+  font-family:'Monotype Corsiva', cursive;
+
+}
+
+h2 {
+  padding-top:10px;
+  font-size:28px;
+}
+
+p{
+  padding-top:25px;
+  font-size:20px;
+  font-family:Arial, Helvetica, sans-serif;
+  padding-bottom:1em;
+}
+
+footer{
+  padding-top: 1em;
+  padding-bottom:1em;
+  font-size: 20px;
+  text-align: center;
+}
+
+.container{
+  position: relative;
+  width: 300px;
+  padding:0;
+  border: 1px solid #000000;
+}
+
+.image {
+  display: block;
+  width: 300px 300px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #8B4513;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
